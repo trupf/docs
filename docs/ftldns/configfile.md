@@ -41,7 +41,7 @@ Should `FTL` ignore queries coming from the local machine?
 
 #### `AAAA_QUERY_ANALYSIS=yes|no` {#aaaa_query_analysis data-toc-label='AAAA Query Analysis'}
 
-Should FTL analyze `AAAA` queries? The DNS server will handle `AAAA` queries the same way, reglardless of this setting. All this does is ignoring `AAAA` queries when computing the statistics of Pi-hole. This setting is considered obsolete may may be removed in a future version.
+Should FTL analyze `AAAA` queries? The DNS server will handle `AAAA` queries the same way, reglardless of this setting. All this does is ignoring `AAAA` queries when computing the statistics of Pi-hole. This setting is considered obsolete and may be removed in a future version.
 
 #### `ANALYZE_ONLY_A_AND_AAAA=false|true` {#analyze_only_a_and_aaaa data-toc-label='Analyze A and AAAA Only'}
 
@@ -123,15 +123,15 @@ Specify the path and filename of FTL's SQLite3 long-term database. Setting this 
 
 The location of FTL's log file. If you want to move the log file to a different place, also consider [this FAQ article](https://discourse.pi-hole.net/t/moving-the-pi-hole-log-to-another-location-device/2041).
 
-#### `PIDFILE=/var/run/pihole-FTL.pid` {#file_PIDFILE data-toc-label='Process identifier file'}
+#### `PIDFILE=/run/pihole-FTL.pid` {#file_PIDFILE data-toc-label='Process identifier file'}
 
 The file which contains the PID of FTL's main process.
 
-#### `PORTFILE=/var/run/pihole-FTL.port` {#file_PORTFILE data-toc-label='Port file'}
+#### `PORTFILE=/run/pihole-FTL.port` {#file_PORTFILE data-toc-label='Port file'}
 
 The file containing the port FTL's API is listening on.
 
-#### `SOCKETFILE=/var/run/pihole/FTL.sock` {#file_SOCKETFILE data-toc-label='Socket file'}
+#### `SOCKETFILE=/run/pihole/FTL.sock` {#file_SOCKETFILE data-toc-label='Socket file'}
 
 The file containing the socket FTL's API is listening on.
 
