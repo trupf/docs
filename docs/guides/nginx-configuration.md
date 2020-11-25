@@ -56,6 +56,7 @@
 
         location ~ \.php$ {
             include fastcgi_params;
+            add_header 'Access-Control-Allow-Origin' $server_name;
             fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
             fastcgi_pass unix:/run/php/php7.3-fpm.sock;
             fastcgi_param FQDN true;
